@@ -54,6 +54,21 @@ Breadcrumbs::register('oldalak.show', function($breadcrumbs,$page) {
     $breadcrumbs->push($page->title, route('oldalak.show',$page->id));
 });
 
+Breadcrumbs::register('dokumentumok.index', function($breadcrumbs) {
+    $breadcrumbs->parent('fooldal');
+    $breadcrumbs->push('Dokumentumok', route('dokumentumok.index'));
+});
+
+Breadcrumbs::register('dokumentumok.category', function($breadcrumbs,$category) {
+    $breadcrumbs->parent('dokumentumok.index');
+    $breadcrumbs->push($category->name, route('dokumentumok.index',$category->slug));
+});
+
+Breadcrumbs::register('palyazatok.index', function($breadcrumbs) {
+    $breadcrumbs->parent('fooldal');
+    $breadcrumbs->push('Pályázatok', route('palyazatok.index'));
+});
+
 /**
  * -----------------------------------------------------------------------------
  * Admin

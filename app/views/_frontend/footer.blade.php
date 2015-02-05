@@ -12,7 +12,7 @@
                         <dt>Fax</dt>
                         <dd></dd>
                         <dt>Email</dt>
-                        <dd>{{HTML::mailto('info@banhorvati.hu')}}</dd>
+                        <dd>{{--HTML::mailto('info@banhorvati.hu')--}}</dd>
                     </dl>
                 </div>
             </div>

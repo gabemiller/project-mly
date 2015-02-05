@@ -39,8 +39,6 @@ Route::get('oldal/{id}/{title}', ['uses' => 'Site\PageController@show', 'as' => 
 
 Route::get('palyazatok', ['uses' => 'Site\PageController@showCompetitions', 'as' => 'palyazatok.index']);
 
-//Route::match(['POST', 'GET'], 'documentumok', ['uses' => 'Site\DocumentController@index', 'as' => 'dokumentumok.index']);
-
 Route::get('dokumentumok/{category?}', ['uses' => 'Site\DocumentController@index', 'as' => 'dokumentumok.index']);
 
 /**

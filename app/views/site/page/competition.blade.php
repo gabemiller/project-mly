@@ -1,6 +1,6 @@
 @extend('_frontend.master')
 @section('breadcrumb')
-    {{-- HTML::decode(Breadcrumbs::render('')) --}}
+    {{ HTML::decode(Breadcrumbs::render('palyazatok.index')) }}
 @stop
 @section('content')
     <div class="pages">
