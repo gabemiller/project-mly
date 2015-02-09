@@ -8,9 +8,9 @@
                         <dt>Polgármesteri hivatal</dt>
                         <dd>3645 Mályinka, Rákóczi út 5.</dd>
                         <dt>Telefon</dt>
-                        <dd></dd>
+                        <dd>+36 48 501-206</dd>
                         <dt>Fax</dt>
-                        <dd></dd>
+                        <dd>+36 48 501-207</dd>
                         <dt>Email</dt>
                         <dd>{{--HTML::mailto('info@banhorvati.hu')--}}</dd>
                     </dl>

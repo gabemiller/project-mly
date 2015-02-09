@@ -57,7 +57,7 @@ return array(
 			'host'      => 'localhost',
 			'database'  => 'divide_malyinka_cms',
 			'username'  => 'forge',
-			'password'  => 'K9xjviukLIW6YM4wL1v4',
+			'password'  => 'Z3P3otFt6RWKsQ6u4hoK',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_hungarian_ci',
 			'prefix'    => '',
