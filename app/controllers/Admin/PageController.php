@@ -11,6 +11,7 @@ use Exception;
 use Validator;
 use Redirect;
 use Config;
+use Str;
 
 class PageController extends \BaseController {
 
@@ -63,7 +64,7 @@ class PageController extends \BaseController {
             $page = new Page();
 
             $page->title = Input::get('title');
-            $page->menu = Srt::slug(Input::get('title'));
+            $page->menu = Str::slug(Input::get('title'));
             $page->parent = Input::get('parent');
             $page->content = Input::get('content');
             $page->gallery_id = is_numeric(Input::get('gallery')) ? Input::get('gallery') : 0;
@@ -132,7 +133,7 @@ class PageController extends \BaseController {
             $page = Page::find($id);
 
             $page->title = Input::get('title');
-            $page->menu = Srt::slug(Input::get('title'));
+            $page->menu = Str::slug(Input::get('title'));
             $page->parent = Input::get('parent');
             $page->content = Input::get('content');
             $page->gallery_id = is_numeric(Input::get('gallery')) ? Input::get('gallery') : 0;
