@@ -4,6 +4,11 @@ namespace Divide\CMS;
 
 use Str;
 
+/**
+ * Divide\CMS\Page
+ *
+ * @property-read \Divide\CMS\Gallery $gallery 
+ */
 class Page extends \Eloquent
 {
 
@@ -76,6 +81,20 @@ class Page extends \Eloquent
         } else {
             return false;
         }
+    }
+
+    /**
+     * @return array
+     */
+    public static function getArray()
+    {
+        $arr = array();
+
+        foreach (static::all(['id', 'title']) as $item) {
+            $arr[$item->id] = $item->title;
+        }
+
+        return $arr;
     }
 
 }

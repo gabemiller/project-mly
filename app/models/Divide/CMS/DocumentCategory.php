@@ -2,6 +2,12 @@
 
 namespace Divide\CMS;
 
+/**
+ * Divide\CMS\DocumentCategory
+ *
+ * @property-read \Illuminate\Database\Eloquent\Collection|\Divide\CMS\Document[] $documents 
+ * @property-read \Divide\CMS\DocumentCategory $ancestor 
+ */
 class DocumentCategory extends \Eloquent {
 
     protected $table = 'documentcategory';
@@ -51,9 +57,9 @@ class DocumentCategory extends \Eloquent {
      * @param int $id
      * @return array
      */
-    public static function getCategoriesforPublic() {
+    public static function getArray() {
 
-        $array = array(0 => 'Válasszon kategóriát!');
+        $array = array(0 => 'Összes kategória');
 
         foreach (DocumentCategory::all(['id', 'name']) as $docCategory) {
             $array[$docCategory->id] = $docCategory->name;

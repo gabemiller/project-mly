@@ -6,6 +6,13 @@ use Illuminate\Auth\UserInterface;
 use Illuminate\Auth\Reminders\RemindableInterface;
 use File;
 
+/**
+ * Divide\CMS\User
+ *
+ * @property-read mixed $activated 
+ * @property mixed $permissions 
+ * @property-read \Illuminate\Database\Eloquent\Collection|\static::$groupModel[] $groups 
+ */
 class User extends \Cartalyst\Sentry\Users\Eloquent\User implements UserInterface, RemindableInterface {
 
     /**

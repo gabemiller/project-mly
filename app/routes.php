@@ -139,6 +139,8 @@ Route::group(array('prefix' => 'admin', 'namespace' => 'Admin', 'before' => 'use
 
     Route::resource('galeria', 'GalleryController');
 
+    Route::resource('menu-kezelo', 'MenuController');
+
     Route::get('galeria/kep/{id}/upload', ['uses' => 'GalleryController@getPicture', 'as' => 'admin.galeria.kep.upload'])->where('id', '[0-9]+');
 
     Route::post('galeria/kep/save', ['uses' => 'GalleryController@postPicture', 'as' => 'admin.galeria.kep.save']);
@@ -258,6 +260,13 @@ if (Request::is('admin') || Request::is('admin/*')) {
         $menu->get('pályázat')->add('Összes pályázat',
             ['route' => 'admin.palyazat.index'])
             ->prepend('<i class="fa fa-angle-double-right "></i> ');
+
+        /**
+         * Menükezelő menüpont
+         */
+        $menu->add('<i class="fa fa-bars"></i> Menü kezelő',
+            ['route' => 'admin.menu-kezelo.create']);
+
 
 
         /**

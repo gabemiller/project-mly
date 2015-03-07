@@ -63,6 +63,22 @@ $(function() {
         onColor: 'success'
     });
 
+    $('.url_state').hide();
+
+    $('[name="url_modification"]').bootstrapSwitch({
+        onText: 'Igen',
+        offText: 'Nem',
+        onColor: 'success'
+    });
+
+    $('[name="url_modification"]').on('switchChange.bootstrapSwitch', function(event, state) {
+        if(state){
+            $('.url_state').show();
+        }else{
+            $('.url_state').hide();
+        }
+    });
+
     /**
      * -------------------------------------------------------------------------
      * DateTimePicker
@@ -411,6 +427,15 @@ $(function() {
         });
     });
 
+
+    /**
+     * Menütípus tab váltás
+     */
+
+    $('select[name=type]').change(function () {
+        $('a[href="#' + $(this).val() + '"]').tab('show');
+    });
+    
     /**
      * Oldal menü
      */

@@ -2,6 +2,11 @@
 
 namespace Divide\CMS;
 
+/**
+ * Divide\CMS\Document
+ *
+ * @property-read \Illuminate\Database\Eloquent\Collection|\Divide\CMS\DocumentCategory[] $categories 
+ */
 class Document extends \Eloquent
 {
 

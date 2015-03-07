@@ -2,6 +2,11 @@
 
 namespace Divide\CMS;
 
+/**
+ * Divide\CMS\Picture
+ *
+ * @property-read \Divide\CMS\Gallery $gallery 
+ */
 class Picture extends \Eloquent {
 
     //protected $fillable = [];

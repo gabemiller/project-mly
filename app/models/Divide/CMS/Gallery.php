@@ -4,6 +4,11 @@ namespace Divide\CMS;
 
 use Str;
 
+/**
+ * Divide\CMS\Gallery
+ *
+ * @property-read \Illuminate\Database\Eloquent\Collection|\Divide\CMS\Picture[] $pictures 
+ */
 class Gallery extends \Eloquent {
 
     protected $fillable = ['name'];
