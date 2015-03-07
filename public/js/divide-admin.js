@@ -435,7 +435,7 @@ $(function() {
     $('select[name=type]').change(function () {
         $('a[href="#' + $(this).val() + '"]').tab('show');
     });
-    
+
     /**
      * Oldal menü
      */
