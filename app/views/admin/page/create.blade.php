@@ -24,13 +24,13 @@
                     <h3 class="box-title">Oldal</h3>
                 </div>
                 <div class="box-body">
-                    <div class="form-group">
+                    <div class="form-group hidden">
                         {{Form::label('parent', 'Szülő menüpont',array('class'=>'col-lg-2 control-label'))}}
                         <div class="col-lg-2">
                             {{Form::selection('parent', $pages,array('class'=>'form-control'));}} 
                         </div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group hidden">
                         {{Form::label('menu', 'Menüpont',array('class'=>'col-lg-2 control-label'))}}
                         <div class="col-lg-9">
                             {{Form::input('text','menu','',array('class'=>'form-control','Placeholder'=>'Menüpont'))}}

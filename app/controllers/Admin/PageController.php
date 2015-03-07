@@ -51,7 +51,6 @@ class PageController extends \BaseController {
 
             $rules = array(
                 'title' => 'required|unique:pages',
-                'menu' => 'required|unique:pages',
                 'content' => 'required'
             );
 
@@ -64,7 +63,7 @@ class PageController extends \BaseController {
             $page = new Page();
 
             $page->title = Input::get('title');
-            $page->menu = Input::get('menu');
+            $page->menu = Srt::slug(Input::get('title'));
             $page->parent = Input::get('parent');
             $page->content = Input::get('content');
             $page->gallery_id = is_numeric(Input::get('gallery')) ? Input::get('gallery') : 0;
@@ -121,7 +120,6 @@ class PageController extends \BaseController {
 
             $rules = array(
                 'title' => 'required|unique:pages,title,' . $id,
-                'menu' => 'required|unique:pages,menu,' . $id,
                 'content' => 'required'
             );
 
@@ -134,7 +132,7 @@ class PageController extends \BaseController {
             $page = Page::find($id);
 
             $page->title = Input::get('title');
-            $page->menu = Input::get('menu');
+            $page->menu = Srt::slug(Input::get('title'));
             $page->parent = Input::get('parent');
             $page->content = Input::get('content');
             $page->gallery_id = is_numeric(Input::get('gallery')) ? Input::get('gallery') : 0;
