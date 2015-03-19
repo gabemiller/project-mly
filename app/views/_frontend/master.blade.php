@@ -12,7 +12,7 @@
             {{ HTML::script('//html5shim.googlecode.com/svn/trunk/html5.js'); }}
         <![endif]-->
 
-        {{ HTML::style('http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&subset=latin,latin-ext'); }}
+        {{ HTML::style('http://fonts.googleapis.com/css?family=Lora:400,700&subset=latin,latin-ext'); }}
         {{ HTML::style('css/bootstrap.min.css'); }}
         {{ HTML::style('css/font-awesome.min.css'); }}
         {{ HTML::style('css/blueimp-gallery.css'); }}
