@@ -26,10 +26,10 @@
                             <thead>
                                 <tr>
                                     <th class="table-col-xs sorter-false filter-false"><input type="checkbox" id="checkAll"></th>
-                                    <th class="table-col-xs">Id</th>
-                                    <th class="table-col-xs">P_Id</th>
-                                    <th>Menü</th>
+                                    <th class="table-col-xs">Az</th>
                                     <th>Oldalnév</th>
+                                    <th>Létrehozva</th>
+                                    <th>Módosítva</th>
                                     <th class="table-col-xs sorter-false filter-false">Beállítások</th>
                                 </tr>           
                             </thead>
