@@ -21,6 +21,8 @@ Route::pattern('category', '[0-9A-z_-]+');
 
 Route::get('/', ['uses' => 'Site\HomeController@index', 'as' => 'fooldal']);
 
+Route::get('hirek', ['uses' => 'Site\ArticleController@index', 'as' => 'hirek.index']);
+
 Route::get('hirek/{id}/{title}', ['uses' => 'Site\ArticleController@show', 'as' => 'hirek.show']);
 
 Route::get('hirek/cimke/{id}/{tagSlug}', ['uses' => 'Site\ArticleController@tag', 'as' => 'hirek.tag']);
