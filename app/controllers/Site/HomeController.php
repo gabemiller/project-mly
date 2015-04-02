@@ -2,7 +2,7 @@
 
 namespace Site;
 
-use Divide\CMS\Article;
+use Divide\CMS\Page;
 use View;
 
 class HomeController extends \BaseController {
