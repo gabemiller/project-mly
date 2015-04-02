@@ -4,6 +4,8 @@
         <meta http-equiv="content-type" content="text/html; charset=UTF-8">
         <meta charset="utf-8">
 
+        <meta name="google-site-verification" content="EMQXAeXUB74DGHq812l4QN_iYjT0hzwIYrD2R0VWGZA" />
+
 
         <link href="/assets/favicon.ico" rel="icon" type="image/x-icon" />
         <title>{{Config::get('globals.title');}} - {{$title or ''}}</title>
