@@ -26,7 +26,7 @@ class PageController extends \BaseController {
         View::share('title', 'Oldalak');
 
         $this->layout->content = View::make('admin.page.index'
-        )->with('pages', Page::where('is_competition','=',false)->get(['id','parent','menu','title']));
+        )->with('pages', Page::where('is_competition','=',false)->get(['id','title','created_at','updated_at']));
     }
 
     /**
