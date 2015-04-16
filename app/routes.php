@@ -43,6 +43,17 @@ Route::get('palyazatok', ['uses' => 'Site\PageController@showCompetitions', 'as'
 
 Route::get('dokumentumok/{category?}', ['uses' => 'Site\DocumentController@index', 'as' => 'dokumentumok.index']);
 
+Route::get('akadalymentes/{am}', function ($am) {
+
+    if ($am == 'letrehoz') {
+       $cookie = \Cookie::forever('am', 'true');
+    } else {
+       $cookie = \Cookie::forget('am');
+    }
+
+    return \Redirect::back()->withCookie($cookie);
+});
+
 /**
  * -----------------------------------------------------------------------------
  * Site menu
@@ -141,7 +152,7 @@ Route::group(array('prefix' => 'admin', 'namespace' => 'Admin', 'before' => 'use
         Route::resource('felhasznalo', 'UsersController');
 
         Route::post('felhasznalo/{id}/change',
-            ['uses' => 'UsersController@postProfile','as' => 'admin.felhasznalok.felhasznalo.change']);
+            ['uses' => 'UsersController@postProfile', 'as' => 'admin.felhasznalok.felhasznalo.change']);
 
         Route::post('felhasznalo/{id}/password',
             ['uses' => 'UsersController@postPassword', 'as' => 'admin.felhasznalok.felhasznalo.password']);
@@ -253,7 +264,6 @@ if (Request::is('admin') || Request::is('admin/*')) {
          */
         $menu->add('<i class="fa fa-bars"></i> Menü kezelő',
             ['route' => 'admin.menu-kezelo.create']);
-
 
 
         /**

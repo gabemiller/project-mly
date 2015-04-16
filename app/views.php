@@ -13,6 +13,10 @@ View::composer('_frontend.footer', function ($view) {
     $view->with('articleFooter', $articles);
 });
 
+View::composer('_frontend.master',function($view){
+   $view->with('am',\Cookie::get('am'));
+});
+
 /**
  *
  */

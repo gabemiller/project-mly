@@ -1,0 +1,69 @@
+*{
+  background-color: #000000 !important;
+  color: yellow !important;
+  border: none;
+}
+
+html,body{
+  font-size: 20px;
+}
+
+header{
+  .logo{
+    display: none;
+  }
+}
+
+h1{
+  font-size: 2em;
+}
+
+h2{
+  font-size: 1.8em;
+}
+
+h3{
+  font-size: 1.6em;
+}
+
+h4{
+  font-size: 1.4em;
+}
+
+h5,p{
+  font-size: 1.2em;
+}
+
+h6,a,span{
+  font-size: 1em;
+}
+
+a, a:visited {
+  color: yellow;
+  text-decoration: underline;
+}
+
+a:active, a:hover {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+#disqus_thread{
+  display: none;
+}
+
+// Normal
+
+.btn-am, .btn-am:visited{
+  background-image: none;
+  padding: 8px;
+  float: right;
+  border: 2px solid #000000;
+  margin: 1px 0;
+}
+
+.btn-am:hover, .btn-am:active{
+  text-decoration: none;
+}
+

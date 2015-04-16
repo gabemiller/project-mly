@@ -1,0 +1,58 @@
+
+//
+%transition-color{
+  transition: color .1s ease-in 0s;
+}
+
+//
+@mixin button($color){
+
+  background-color: $color;
+  border-color: $color;
+  color: white;
+  border-radius: 0;
+  outline: 0;
+  font-weight: bold;
+
+  transition: all .1s linear 0s;
+
+  &:visited{
+    color: #ffffff;
+  }
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    background-color: darken($color, 10%); //#e46800;
+    border-color: darken($color, 15%); //#ca5d00;
+    outline: 0;
+    color: white;
+  }
+
+  &.disabled:hover,
+  &.disabled:focus,
+  &.disabled:active,
+  &.disabled.active,
+  &[disabled]:hover,
+  &[disabled]:focus,
+  &[disabled]:active,
+  &[disabled].active,
+  fieldset[disabled] &:hover,
+  fieldset[disabled] &:focus,
+  fieldset[disabled] &:active,
+  fieldset[disabled] &.active {
+    background-color: $color;
+    border-color: $color;
+    outline: 0;
+  }
+
+  &.active.focus,
+  &.active:focus,
+  &.focus,
+  &:active.focus,
+  &:active:focus,
+  &:focus {
+    outline: 0;
+  }
+}
