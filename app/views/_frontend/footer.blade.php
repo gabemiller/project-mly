@@ -12,7 +12,7 @@
                         <dt>Fax</dt>
                         <dd>+36 48 501-207</dd>
                         <dt>Email</dt>
-                        <dd>{{--HTML::mailto('info@banhorvati.hu')--}}</dd>
+                        <dd>{{HTML::mailto('malyinka.hivatal@gmail.com')}}</dd>
                     </dl>
                 </div>
             </div>

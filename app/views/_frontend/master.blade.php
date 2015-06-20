@@ -43,7 +43,7 @@
 
                                 <div class="collapse" id="navCollapse">
                                     <h4>Pályázatok</h4>
-                                    {{--HTML::decode(HTML::linkRoute('oldalak.show','<img class="img-responsive" src="/img/gallery/36/1421015562.1366-egeszsegugyi-alapellatas-fejlesztese.jpg" alt="Infóblokk">',['id'=>17,'title'=>'egeszsegugyi-alapellatas-fejlesztese-banhorvati-es-nagybarca-kozsegekben-emop-411a-12-2013-0071']))--}}
+                                    {{HTML::decode(HTML::linkRoute('oldalak.show','<img class="img-responsive" src="/uploads/untitled%20folder/Orvosi%20rendel%C5%91%20fejleszt%C3%A9se%20M%C3%A1lyinka%20k%C3%B6zs%C3%A9gben.jpg" alt="Infóblokk">',['id'=>48,'title'=>'orvosi-rendelo-fejlesztese-malyinka-kozsegben-emop-411a-12-2013-0070']))}}
                                     {{$competitionMenu->asUl(array('class'=>'list-unstyled nav-menu-competition'))}}
                                     <h4>Navigáció</h4>
                                     {{$mainMenu->asUl(array('class'=>'list-unstyled nav-menu'))}}
