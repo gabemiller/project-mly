@@ -43,7 +43,7 @@
 
                                 <div class="collapse" id="navCollapse">
                                     <h4>Pályázatok</h4>
-                                    {{HTML::decode(HTML::linkRoute('oldalak.show','<img class="img-responsive" src="/img/gallery/6/1533153763.4676-nagybarca-es-tersegenek.jpg" alt="Infóblokk">',['id'=>90,'title'=>'nagybarca-es-tersegenek-kozossegfejlesztesi-projektje']))}}
+                                    {{HTML::decode(HTML::linkRoute('oldalak.show','<img class="img-responsive" src="/img/gallery/7/1536521741.3268-malyinka-kozseg-onkormanyzata.jpg" alt="Infóblokk">',['id'=>92,'title'=>'malyinka-kozseg-onkormanyzata-asp-kozponthoz-valo-csatlakozasa']))}}
                                     {{$competitionMenu->asUl(array('class'=>'list-unstyled nav-menu-competition'))}}
                                     <h4>Navigáció</h4>
                                     {{$mainMenu->asUl(array('class'=>'list-unstyled nav-menu'))}}
