@@ -33,7 +33,9 @@ class PageController extends \BaseController {
      * @return Response
      */
     public function showCompetitions(){
-        $pages = Page::where('is_competition','=',true)->paginate(5);
+        $pages = Page::where('is_competition','=',true)
+            ->orderBy('created_at', 'DESC')
+            ->paginate(15);
 
         View::share('title', 'Pályázatok');
 
