@@ -25,6 +25,10 @@
 <body>
 <div id="fb-root"></div>
 
+<a class="competition-top-left" href="http://malyinka.hu/oldal/104/kozossegi-es-kulturalis-celu-telepulesfejlesztes-uj-muvelodesi-haz-epitese-malyinka-telepulesen">
+    <img src="http://malyinka.hu/img/gallery/9/1684078370.7034-projekt-azonositoszama-top-plusz-121-21-bo1-2022-00107.jpg" alt="Közösségi és kulturális célú településfejlesztés: Új művelődési ház építése Mályinka településen">
+</a>
+
 <div class="competition-drop-up open">
     <div class="competition-container">
         <a href="http://banhorvati.hu/img/gallery/41/1600201704.4254-magyar-falu-program.jpg" target="_blank" style="margin-bottom: 10px">

@@ -175,3 +175,19 @@
 .competition-drop-up.open > .competition-container > ul{
     visibility: visible;
 }
+
+.competition-top-left {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: auto;
+    display: flex;
+    z-index: 3;
+}
+
+.competition-top-left > img {
+    flex: 0 0 auto;
+    display: block;
+    width: 100%;
+}
