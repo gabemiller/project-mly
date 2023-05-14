@@ -64,6 +64,11 @@ Breadcrumbs::register('dokumentumok.category', function($breadcrumbs,$category) 
     $breadcrumbs->push($category->name, route('dokumentumok.index',$category->slug));
 });
 
+Breadcrumbs::register('eupalyazatok.index', function($breadcrumbs) {
+    $breadcrumbs->parent('fooldal');
+    $breadcrumbs->push('EU Pályázatok', route('palyazatok.index'));
+});
+
 Breadcrumbs::register('palyazatok.index', function($breadcrumbs) {
     $breadcrumbs->parent('fooldal');
     $breadcrumbs->push('Pályázatok', route('palyazatok.index'));

@@ -17,12 +17,28 @@
     {{HTML::style('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css')}}
     {{ HTML::style('css/bootstrap.min.css') }}
     {{ HTML::style('css/divide.min.css') }}
+    {{ HTML::style('css/competition-drop-up.css') }}
     @if(isset($am)&&!empty($am))
         {{ HTML::style('css/divide.am.min.css') }}
     @endif
 </head>
 <body>
 <div id="fb-root"></div>
+
+<div class="competition-drop-up open">
+    <div class="competition-container">
+        <a href="http://banhorvati.hu/img/gallery/41/1600201704.4254-magyar-falu-program.jpg" target="_blank" style="margin-bottom: 10px">
+            <img class="img-responsive" src="http://banhorvati.hu/img/gallery/41/1600201704.4254-magyar-falu-program.jpg" alt="Magyar Falu Program">
+        </a>
+        <a href="http://malyinka.hu/oldal/92/malyinka-kozseg-onkormanyzata-asp-kozponthoz-valo-csatlakozasa" target="_blank">
+            <img class="img-responsive" src="http://malyinka.hu/img/gallery/7/1536521741.3268-malyinka-kozseg-onkormanyzata.jpg" alt="Infóblokk">
+        </a>
+        {{$competitionSideMenu->asUl(array('class'=>'list-unstyled nav-menu-competition'))}}
+    </div>
+    <button class="btn-circle">
+        <span></span>
+    </button>
+</div>
 
 @include('_frontend.lightbox')
 @include('_frontend.header')
@@ -96,6 +112,13 @@
 {{ HTML::script('js/plugins/bootstrap-image-gallery.js'); }}
 {{ HTML::script('js/divide.js'); }}
 
+<script>
+	const competitionBtn = document.querySelector('.competition-drop-up > .btn-circle');
+	competitionBtn.addEventListener('click', function (e) {
+		e.preventDefault()
+		this.parentNode.classList.toggle('open');
+	});
+</script>
 
 </body>
 </html>

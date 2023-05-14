@@ -4,10 +4,10 @@
 @stop
 @section('content')
     <script>
-		const currencyFormatter = new Intl.NumberFormat('hu-HU', { style: 'currency', currency: 'HUF', minimumFractionDigits: 0 });
+        const currencyFormatter = new Intl.NumberFormat('hu-HU', { style: 'currency', currency: 'HUF', minimumFractionDigits: 0 });
     </script>
     <div class="pages">
-        <h2>Pályázatok</h2>
+        <h2>EU Pályázatok</h2>
 
         <div class="table-responsive">
             <table class="table table-striped">

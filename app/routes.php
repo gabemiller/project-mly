@@ -39,6 +39,8 @@ Route::get('galeriak/{id}/{title}', ['uses' => 'Site\GalleryController@show', 'a
 
 Route::get('oldal/{id}/{title}', ['uses' => 'Site\PageController@show', 'as' => 'oldalak.show']);
 
+Route::get('eu-palyazatok', ['uses' => 'Site\PageController@showEuCompetitions', 'as' => 'eupalyazatok.index']);
+
 Route::get('palyazatok', ['uses' => 'Site\PageController@showCompetitions', 'as' => 'palyazatok.index']);
 
 Route::get('dokumentumok/{category?}', ['uses' => 'Site\DocumentController@index', 'as' => 'dokumentumok.index']);
@@ -65,7 +67,12 @@ Route::get('akadalymentes/{am}', function ($am) {
 if (!Request::is('admin') && !Request::is('admin/*')) {
 
     Menu::make('competitionMenu', function ($menu) {
+        $menu->add('EU Pályázatok', array('route' => 'eupalyazatok.index'));
         $menu->add('Pályázatok', array('route' => 'palyazatok.index'));
+    });
+
+    Menu::make('competitionSideMenu', function ($menu) {
+        $menu->add('EU Pályázatok', array('route' => 'eupalyazatok.index'));
     });
 
     Menu::make('mainMenu', function ($menu) {
